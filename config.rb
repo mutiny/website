@@ -77,6 +77,6 @@ end
 
 activate :deploy do |deploy|
   deploy.method = :git
-  deploy.remote = "https://github.com/louismrose/mutiny.git"
-  deploy.branch = "gh-pages"
+  deploy.remote = "https://github.com/mutiny/mutiny.github.io"
+  deploy.branch = "master"
 end
