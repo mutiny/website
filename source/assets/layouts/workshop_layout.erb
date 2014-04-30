@@ -1,0 +1,36 @@
+<% wrap_layout :base do %>
+  <div class="jumbotron">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Mutation Testing and Model Transformation (MT^2)</h2>
+          <p>
+            An interactive workshop on combining mutation testing and model transformation.
+          </p>
+    
+          <p>
+            Part of the
+            <a href="http://stafconferences.info">Software Technologies: Applications and Foundations (STAF)</a>
+          federated conferences.</p>
+
+          <p>Hosted at the University of York, United Kingdom on 21st July 2014.</p>
+    
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 1em;">
+        <div class="col-md-3 text-center">
+          <a href="/mt2_workshop/cfp.html" title="Call for Participation" class="btn btn-info btn-lg">Call for Participation</a>
+        </div>
+        <div class="col-md-3 text-center">
+          <a href="/mt2_workshop/programme.html" title="Draft Programme" class="btn btn-info btn-lg">Draft Programme</a>
+        </div>
+        <div class="col-md-3 text-center">
+          <a href="http://stafconferences.info" title="Registration" class="btn btn-info btn-lg">Registration</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <%=yield%>
+<% end%>

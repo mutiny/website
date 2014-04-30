@@ -3,6 +3,10 @@ $navbar-inverse-link-color: #F9F7ED;
 
 @import "bootstrap";
 
+html {
+  overflow-y: scroll;
+}
+
 body {
   padding-top: 50px;
 }
