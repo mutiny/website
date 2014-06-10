@@ -9,6 +9,7 @@ html {
 
 body {
   padding-top: 50px;
+  margin-bottom: 5em;
 }
 
 body.index, body.essays {
@@ -37,5 +38,13 @@ body.index, body.essays {
     margin-top: 2em;
     padding-top: 0.66em;
     font-size: 80%
+  }
+}
+
+ol#position_statements {
+  padding-left: 30px;
+
+  li {
+    margin-bottom: 0.5em;
   }
 }
