@@ -1,0 +1,215 @@
+---
+layout: without_nav
+---
+
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#page-top">Mutiny</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#about">About</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#quickstart">Get Started</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#people">People</a>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">More <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="/articles">Articles</a></li>
+                    <li><a href="/tutorial">Tutorial</a></li>
+                  </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+<!-- Header -->
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <img class="img-responsive" src="images/logo.png" alt="">
+                <div class="intro-text">
+                    <span class="name">Mutiny</span>
+                    <hr class="star-light">
+                    <span class="skills">An experimental mutation testing framework for Ruby</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- About Section -->
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>About</h2>
+                <hr class="star-primary">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-lg-offset-2">
+                <p>Mutation testing asks <strong>"if your code is wrong, can your tests tell?"</strong> It's a simple but powerful idea that can find bugs in your code and improve your tests.</p>
+            </div>
+            <div class="col-lg-4">
+                <p>Mutiny is a modern implementation of mutation testing for Ruby. Mutiny is being developed as part of a research programme at the University of York.</p>
+            </div>
+        </div>
+        <div class="row top-buffer">
+          <div class="col-lg-8 col-lg-offset-2 text-center">
+              <a href="/articles" class="btn btn-lg btn-primary">
+                  <i class="fa fa-book">&nbsp;</i> Learn more
+              </a>
+          </div>
+        </div>
+    </div>
+</section>
+
+<!-- Get Started Section -->
+<section class="success" id="quickstart">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Get Started</h2>
+                <hr class="star-light">
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 text-center">
+            <p>Try a sample application:</p>
+              <pre class="text-left"><code>
+                > git clone https://github.com/mutiny/demo.git
+                > bundle install
+                > mutiny analyse
+                ...
+              </code></pre>
+            </div>
+          </div>
+        <div class="row top-buffer">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <p>
+                  <a href="/tutorial" class="btn btn-lg btn-default">
+                    <i class="fa fa-wrench">&nbsp;</i> Take tutorial
+                  </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- People Section -->
+<section id="people">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>People</h2>
+                <hr class="star-primary">
+                <p>Mutiny is developed at the University of York by:</p>
+            </div>
+        </div>
+        <div class="row top-buffer text-center">
+          <% data.people.each_with_index do |person,index| %>
+            <div class="col-sm-3 people-item">
+                <a href="#peopleModal<%=index%>" class="people-link" data-toggle="modal">
+                    <div class="caption">
+                        <div class="caption-content">
+                            <i class="fa fa-search-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="images/people/<%= person.photo %>" class="img-responsive" alt="">
+                </a>
+                <span class="people-name"><%=person.name%></span>
+            </div>
+          <% end %>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center">
+    <div class="footer-above">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col col-md-4">
+                    <h3>Open Source</h3>
+                    <p>Our <a href="https://www.github.com/mutiny">code</a> is on Github.</p>
+                </div>
+                <div class="footer-col col-md-4">
+                    <h3>Contact</h3>
+                    <p>Dr. Louis Rose<br>University of York<br><a href="http://www.cs.york.ac.uk/~louis">www.cs.york.ac.uk/~louis</a></p>
+                </div>
+                <div class="footer-col col-md-4">
+                    <h3>Alternatives</h3>
+                    <p>Want a more complete mutation testing tool for Ruby? Try <a href="https://github.com/mbj/mutant">mutant</a> instead.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="footer-below">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                  Copyright &copy 2015 Louis Rose
+                </div>
+            </div>
+        </div>
+    </div> -->
+</footer>
+
+<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+<div class="scroll-top page-scroll visible-xs visible-sm">
+    <a class="btn btn-primary" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+    </a>
+</div>
+
+<!-- People Modals -->
+<% data.people.each_with_index do |person,index| %>
+<div class="people-modal modal fade" id="peopleModal<%=index%>" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-3">
+                    <div class="modal-body">
+                        <h2><%=person.name%></h2>
+                        <hr class="star-primary">
+                        <img src="images/people/<%=person.photo%>" class="img-responsive img-centered" alt="">
+                        <p><%=person.biography%></p>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<% end %>

@@ -24,15 +24,16 @@
 #   page "/admin/*"
 # end
 
-page "mt2_workshop/*", layout: :workshop_layout
-
-# Proxy pages (http://middlemanapp.com/dynamic-pages/)
+# Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
 #  :which_fake_page => "Rendering a fake page with a local variable" }
 
 ###
 # Helpers
 ###
+
+# Map about-us.html.erb to about-us/index.html, etc.
+activate :directory_indexes
 
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
@@ -47,16 +48,11 @@ page "mt2_workshop/*", layout: :workshop_layout
 #   end
 # end
 
-set :css_dir, 'assets/stylesheets'
-set :js_dir, 'assets/javascripts'
-set :images_dir, 'assets/images'
-set :layouts_dir, 'assets/layouts'
+set :css_dir, 'stylesheets'
 
-set :relative_links, true
+set :js_dir, 'javascripts'
 
-set :markdown_engine, :kramdown
-set :markdown, smartypants: true
-activate :syntax, line_numbers: true
+set :images_dir, 'images'
 
 # Build-specific configuration
 configure :build do
@@ -70,10 +66,7 @@ configure :build do
   # activate :asset_hash
 
   # Use relative URLs
-  activate :relative_assets
-  
-  # Support URLs without .html extension
-  activate :directory_indexes
+  # activate :relative_assets
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"

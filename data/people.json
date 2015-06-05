@@ -1,0 +1,32 @@
+[
+  {
+    "name" : "Louis Rose",
+    "photo" : "louis.jpg",
+    "biography" : "<a href=\"http://www.cs.york.ac.uk/~louis\">Louis</a> leads the Mutiny project. He directs a research programme on mutation testing at the University of York, where he is a lecturer in software engineering.<p>He likes running (very slowly), learning (quite slowly) and finding bugs (quickly)."
+  },
+  {
+    "name" : "Tim Waterson",
+    "photo" : "tim.jpg",
+    "biography" : "<a href=\"http://waterson.co\">Tim</a> is making it straightforward to apply Mutiny as part of a typical develop-test-build-deploy cycle."
+  },
+  {
+    "name" : "Katherine Smith",
+    "photo" : "unknown.jpg",
+    "biography" : "Katherine is applying user-centered design and interaction modelling techniques to mutation testing, and delivering an improved user experience for Mutiny."
+  },
+  {
+    "name" : "Liam Mullane",
+    "photo" : "liam.png",
+    "biography" : "<a href=\"http://liammullane.com\">Liam</a> is adding adding state-of-the-art equivalent mutant detection to Mutiny, which will improve its effectiveness, scalability and usability."
+  },
+  {
+    "name" : "James Shaw",
+    "photo" : "james.jpg",
+    "biography" : "James is generalising the mutation engine in Mutiny so that it can be used for software written in more than one language.<p>A keen sportsman, he enjoys playing tennis and attempting to find his way around a golf course, albeit in a rather zig-zag fashion!"
+  },
+  {
+    "name" : "Katie Mills",
+    "photo" : "katie.jpg",
+    "biography" : "Katie is analysing recently proposed techniques for speeding up mutation testing, and extending Mutiny to incorporate the most performant of these techniques."
+  }
+]
