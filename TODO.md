@@ -1,10 +1,7 @@
 # Homepage
 
 # Articles
-* Switch to Ruby examples?
-* Navigation
-  * Add links from articles back to index?
-  * Add prev and next links?
+* Switch to Ruby examples
 
 # Tutorial
 * Write a first draft
