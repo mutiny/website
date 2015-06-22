@@ -3,7 +3,7 @@ title: Articles
 layout: article
 ---
 
-### Articles
+# Articles
 
 Mutation testing has been around for a while: the first academic papers appeared in the 1970s, and popular mutation tools began to appear in the 1990s.
 

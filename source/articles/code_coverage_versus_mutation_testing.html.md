@@ -64,7 +64,7 @@ Both in theory and in practice, code coverage turns out to be quite a weak mecha
 
 Improving a test suite via mutation testing involves adding new test cases to detect mutants that have not been detected by the existing test suite. Let's apply mutation testing to the *isPalindrome* method.
 
-Applying PIT[^2], a mutation testing tool for Java, to the single test case that achieves 100% code coverage results in a mutation score of 56%: 9 mutants were created, and 4 were not detected by our single test case. One of the undetected mutants is shown below:
+Applying the PIT mutation testing tool[^2] to the single test case that achieves 100% code coverage results in a mutation score of 56%: 9 mutants were created, and 4 were not detected by our single test case. One of the undetected mutants is shown below:
 
 ~~~ java
 @Test
@@ -168,7 +168,7 @@ As we have seen via this example, mutation testing provides a more rigorous asse
 In short, mutation testing imposes stricter requirements on our test suite than code coverage, and hence provides greater confidence in the quality of our code.
 
 
-## Footnotes
+---
 
-  [^1]: The term *code coverage* is quite widely used in practice, but it's a little imprecise. Most often, I see code coverage used to mean *statement coverage*, which measures the proportion of the statements of a program that have been executed by a test suite. There are other types of code coverage too, including *branch coverage* (the proportion of control flow branches that have been executed), *decision coverage* (the proportion of boolean sub-expressions that have been executed), *path coverage* (the proportion of control flow paths through the program that have been execute), and many more. In this essay, I use the term code coverage to mean statement coverage.
-  [^2]: To obtain these results, I used version [PIT](http://pitest.org) v0.33.
+  [^1]: Actually, *code coverage* is a whole bunch of metrics. Here, I'm really talking about *statement coverage* as that seems to be the most widely known code coverage metric. Other examples of *code coverage* metrics include branch, path and MC/DC coverage.
+  [^2]: I used version [PIT](http://pitest.org) v0.33.

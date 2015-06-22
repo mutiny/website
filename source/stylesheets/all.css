@@ -1,4 +1,6 @@
+/* Common */
 .top-buffer { margin-top: 1.5em; }
+.footnotes ol, .footnotes p { font-size: 15px; }
 
 /* Syntax highlighting */
 .highlight {
