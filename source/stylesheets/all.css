@@ -1,7 +1,22 @@
 .top-buffer { margin-top: 1.5em; }
+
+/* Syntax highlighting */
+.highlight {
+  margin: 1.25em 0;
+}
+
+.highlight pre {
+  border-width: 0;
+  background-color: #f8f8f8;
+}
+
+
+/* Index page */
 .people-item img { border: 1px solid #2c3e50; }
 .people-name { display: block; margin-top: 0.25em; }
 
+
+/* Articles pages */
 .articles h1 {
   font-size: 2.5em;
 }

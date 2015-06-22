@@ -41,6 +41,10 @@ activate :directory_indexes
 # Reload the browser automatically whenever files change
 # activate :livereload
 
+# Setup syntax highlighting
+set :markdown_engine, :kramdown
+activate :syntax, line_numbers: true
+
 # Methods defined in the helpers block are available in templates
 # helpers do
 #   def some_helper

@@ -1,7 +1,6 @@
 # Homepage
 
 # Articles
-* Fix syntax highlighting
 * Switch to Ruby examples?
 * Footnotes like Marco.org
 * Navigation
