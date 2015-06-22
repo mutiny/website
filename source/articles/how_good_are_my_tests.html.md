@@ -2,7 +2,7 @@
 title: How good are my tests?
 layout: article
 ---
-### How good are my tests?
+# How good are my tests?
 
 In attempting to answer the question "is my program correct?", one approach[^1] is to test your program. In which case, the question often becomes "how good are my tests?"
 
@@ -10,7 +10,7 @@ The short answer is: your tests aren't perfect.
 
 To understand why, we must review some of the earliest work on the theory of testing.
 
-### Perfect testing is infeasible
+## Perfect testing is infeasible
 
 To be absolutely certain that a program is correct, it is necessary to test it exhaustively (i.e., on all possible inputs). Unfortunately, exhaustive testing is almost always infeasible, because even simple programs often have an unmanageably large number of possible inputs. Therefore, much of the effort and skill in testing is selecting a good subset of all possible inputs to use.
 
@@ -24,7 +24,7 @@ As many of the programs that we wish to test are not black boxes (e.g., we can o
 
 The practical flaw with the properties defined by Goodenough and Gerhart is demonstrated by [Weyuker and Ostrand](http://dx.doi.org/10.1109/TSE.1980.234485). They show that the properties can only be assessed by determining whether or not the program contains faults[^4] and if so, which types of fault. However, we do not know this information upfront (and, in fact, we wish to obtain it via testing).
 
-### Is imperfect testing good enough?
+## Is imperfect testing good enough?
 
 Given that testing is almost always incomplete and hence cannot be used to prove a program correct, why does it remain popular?
 
@@ -34,7 +34,7 @@ Weyuker and Ostrand offer one answer. Their paper goes on to argue in favour of 
 
 Along these lines, arguably the best contemporary method for answering the question "how good are my tests?" (and hence "how sure am I that my program is correct?") is [mutation testing](mutation_testing.html).
 
-#### Footnotes
+## Footnotes
 
   [^1]: Other approaches often involve formal methods.
   [^2]: Goodenough and Gerhart propose that a strategy (data selection criterion) must be *reliable* and *valid* to be ideal (i.e., as effective as an exhaustive test). A reliable strategy always yields subsets of the input domain that produce consistent results: if one of the subsets indicates that the program is (in)correct, then all subsets selected by the strategy must indicate that the program is (in)correct. A valid strategy will always yield at least one subset of the input domain that detects a fault, if the program is incorrect.
